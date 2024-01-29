@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.2/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.2/core.js"></script>
+    <style>
+        .abs{
+            padding: 10px 20px;
+            background: #111;
+            color: #f5f5f5;
+            border: 2px solid white;
+            font-size: 16px;
+            font-weight: 600;
+            outline: none;
+            border-radius: 10px;
+            transition: all 300ms ease-in-out;
+        }
+        
+        .abs:hover{
+            background: white;
+            color: black;
+            border: 2px solid black;
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html" class="abs">back</a>
+    <script type="py" terminal>
+        from pyscript import display
+
+        # Dictionary with fruits and sugar
+        fruits_sugar_contain = {'banana': 300, 'apple': 280, 'pineapple': 180, 'melon': 240, 'watermelon': 260}
+
+        # Find the sweetest fruit
+        sweetest_fruit = max(fruits_sugar_contain, key=fruits_sugar_contain.get)
+
+        # Check and display the result
+        if sweetest_fruit in fruits_sugar_contain:
+            print(f"The the sweetest fruit is the {sweetest_fruit.capitalize()} with a sugar contain of {fruits_sugar_contain [sweetest_fruit]} grams.")
+        else:
+            print("Couldn't determine the fastest car.")
+
+       
+    </script>
+   
+</body>

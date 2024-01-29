@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELF INTRODUCTION</title>
+    <script src="main.js"></script>
+
+
+    <style>
+        body{
+    background: linear-gradient(to left, rgb(139, 136, 136),rgb(194, 152, 194),aqua);
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 2em;
+    border-style: inset;
+    border-radius: 10% / 50%;
+    
+}
+
+
+
+.hobby{
+
+background-clip: text;
+
+}
+
+.hidden{
+    border: 3px solid #A0C2E2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    border-top: -15px;
+    font-style: bold;
+    
+}
+.h2{
+   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    padding: 10px;
+    border-top: -15px;
+    padding: 10px;
+    font-style: italic;
+    font-weight: 900;
+}
+.button34{
+    position: relative;
+    margin: 0 auto;
+    background-color: rgb(176, 230, 151);
+    border: 3px solid #A0C2E2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #7990cc;
+    border-radius: 20px;
+    padding: 10px;
+    border-top: -15px; 
+    box-sizing: border-box;
+    font-weight: 900;
+
+}
+.click{
+
+    border: 3px solid #A0C2E2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #7990cc;
+    border-radius: 20px;
+    padding: 10px;
+    border-top: -15px; 
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+
+.button1{
+    
+    border: 3px solid #A0C2E2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #7990cc;
+    border-radius: 20px;
+    padding: 10px;
+    border-top: -15px; 
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+    
+
+main{
+    display: flex;
+    flex-direction: column;
+    color: rgb(109, 192, 164);
+}
+
+.gg{
+    border: 3px solid #A0C2E2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #7990cc;
+    border-radius: 20px;
+    padding: 10px;
+    border-top: -15px; 
+    box-sizing: border-box;
+}
+
+.abs{
+    padding: 10px 20px;
+    background: #111;
+    color: #f5f5f5;
+    border: 2px solid white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+.abs:hover{
+    background: white;
+    color: black;
+    border: 2px solid black;
+
+}
+    </style>
+
+</head>
+<body>
+    <a href="index.html" class="abs">back</a>
+
+<center>
+        <div id="content">
+            <h1 id="heading" style="font-size: 40px"; align: center;>WLCOME TO MY PAGE</h1>
+            </center>
+            <main>
+            <button class="click" onclick="changeText()">Click Me</button>
+            <button class="click" onclick="ChangeText()">Back</button>
+                </main>
+
+        </div>
+        <br>
+<center>
+     <div class="button container">
+        <button  class="button1" onclick="showIntroduction()">INTRODUCTION</button>
+        &nbsp;  &nbsp;  &nbsp;
+        <button class="button1" onclick="showBio()"> MY BIO</button>
+        &nbsp;  &nbsp;  &nbsp;  
+        <button class="button1" onclick="showHobbies()">MY HOBBIES</button>
+        &nbsp;  &nbsp;  &nbsp;
+
+        <button class="button1" onclick="showContact()">MY CONTACT</button>
+        &nbsp;  &nbsp;  &nbsp; 
+
+    </center>
+    <br>
+    <main>
+                <button id="b3" class="button34" onclick="hideHobbies()">undo</button>
+        
+
+        </main>
+     </div>
+<br>
+
+<center>
+
+
+
+    <img class="img" src="trisz.jpg" width="150px" height="150px">
+</center>
+
+</div>
+<center>
+<div id="intro" class="hidden">
+<h2 class="h2">INTRO</h2>
+<p class="gg">Hello good day everyone, welcome to my page. You want to know me??</p>
+<p class="gg">Hello, I'm Tristan Andal, a 20-year-old 
+    currently studying at TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES-BATANGAS EXTENTION PROGRAM from SAN JOSE BATANGAS. I'm passionate about PROGRAMMING, and I believe in saying "If it works, Don touch it". I'm excited to engage in meaningful conversations and learn from the diverse perspectives of this community.</p>
+</center>
+</div>
+    <center>
+
+    <div id="hobbies" class="hidden">
+        <h2 class="h2">HOBBIES</h2>
+        <p class="gg" id="p">PLAYING GUITAR </p>
+        <img class="oks" src="tristan.jpg" alt="this is me" width="100px" height="100px">
+        <p class="gg">PLAYING ONLINE GAMES</p>
+        <p class="gg">PLAYING BASKETBALL</p>
+        <p class="gg">LISTENING MUSIC</p>
+        
+        </center>
+        </div>
+   
+    <center>
+
+    <div id="bio" class="hidden">
+        <h2 class="h2">MY BIO</h2>
+        <p class="gg" id="p1">
+            NAME: ANDAL RONNEL TRISTAN M.
+        </p>
+        <p class="gg">
+            DATE OF BIRTH: NOV.08, 2002
+        </p>
+        <p class="gg">
+            AGE: 20
+        </p>
+        <p class="gg">
+            ADDRESS: GALAMAY-AMO SITO ULUHAN, SAN JOSE BATANGAS
+        </p>
+       
+        
+        </center>
+    </div>
+    <center>
+
+    <div id="contact" class="hidden">
+        <h2 class="h2">CONTACT</h2>
+        <p class="gg">EMAIL: andalronnel5@gmail.com</p>
+        <p class="gg">CELLPHONE NUMBER: 09854027631</p>
+    
+        </center>
+
+
+    </div>
+
+    <script>
+        function showHobbies() {
+    document.getElementById("hobbies").style.display = "block";
+    document.getElementById("bio").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("intro").style.display = "none";
+
+}
+function showBio() {
+    document.getElementById("hobbies").style.display = "none";
+    document.getElementById("bio").style.display = "block";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("intro").style.display = "none";
+
+}
+function showContact() {
+    document.getElementById("hobbies").style.display = "none";
+    document.getElementById("bio").style.display = "none";
+    document.getElementById("contact").style.display = "block";
+    document.getElementById("intro").style.display = "none";
+
+}
+function showIntroduction() {
+    document.getElementById("hobbies").style.display = "none";
+    document.getElementById("bio").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("intro").style.display = "block";
+}
+
+
+function hideHobbies() {
+    document.getElementById("hobbies").style.display = "none";
+    document.getElementById("bio").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById("intro").style.display = "none";
+}
+
+
+function changeText() {
+    var heading = document.getElementById("heading");
+    heading.textContent = "YOU WANT TO KNOW ME??";
+}
+
+function ChangeText() {
+    var heading = document.getElementById("heading");
+    heading.textContent = "WELCOME TO MY PAGE";
+}
+
+    </script>
+    
+</body>
+</html>

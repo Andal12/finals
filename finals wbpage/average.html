@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="ave.css">
+
+    <script>
+        function calculate() {
+            var a = parseInt(document.getElementById("bookOne").value);
+            var b = parseInt(document.getElementById("bookTwo").value);
+            var c = parseInt(document.getElementById("bookThree").value);
+            var d = parseInt(document.getElementById("bookFour").value);
+            var e = parseInt(document.getElementById("bookFive").value);
+            var f = parseInt(document.getElementById("bookSix").value);
+            var g = parseInt(document.getElementById("bookSeven").value);
+            var h = parseInt(document.getElementById("bookEight").value);
+
+            if (a > 100 || b > 100 || c > 100 || d > 100 || e > 100 || f > 100 || g > 100 || h > 100) {
+                alert("Please enter coreect value");
+            }
+            else {
+                var total = a + b + c + d + e + f + g + h;
+                document.getElementById("total").innerHTML = total;
+
+                var average = total / 8;
+                document.getElementById("average").innerHTML = average;
+                if (a > 74 && b > 74 && b > 74 && c > 74 && d > 74 && e > 74 && f > 74 && g > 74 && h > 74) {
+                    document.getElementById("Remark").innerHTML = "<span style='color: #292;'>Pass</span>";
+                }
+                else {
+                    document.getElementById("Remark").innerHTML = "<span style='color:red;'>Failed</span>";
+                }
+
+
+            }
+            return false;
+
+        }
+
+       
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <a href="index.html" class="abs">back</a>
+   
+    <div class="row">
+        <div class="books" >
+            <div class="sub">
+
+                <h4 class="text-center">Average System</h4>
+
+                <div>
+                    <div class="book1">
+                        <label for="">Math</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookOne" type="number" name="" id="" placeholder="Enter Marks">
+                    </div>
+
+                    <div class="book2">
+                        <label for="">TLE</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookTwo" type="number" name="" id="" placeholder="Enter Marks">
+                    </div>
+
+                    <div class="book3">
+                        <label for="">Computer</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookThree" type="number" name="" id=""
+                            placeholder="Enter Marks">
+                    </div>
+
+                    <div class="book4">
+                        <label for="">MAPEH</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookFour" type="number" name="" id="" placeholder="Enter Marks">
+                    </div>
+
+                    <div class="book5">
+                        <label for="">ENGLISH</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookFive" type="number" name="" id="" placeholder="Enter Marks">
+                    </div>
+
+                    <div class="book6">
+                        <label for="">SCIENCE</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookSix" type="number" name="" id="" placeholder="Enter Marks">
+                    </div>
+
+                    <div class="book7">
+                        <label for="">AP</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookSeven" type="number" name="" id=""
+                            placeholder="Enter Marks">
+                    </div>
+
+                    <div class="book8">
+                        <label for="">FILIPINO</label>
+                        <input style="border: 2px black solid;" class="form-control" id="bookEight" type="number" name="" id=""
+                            placeholder="Enter Marks">
+                    </div>
+
+                </div>
+                <br>
+
+
+                <div>
+                    <button class="btn" onclick="calculate()">Calculate</button>
+                </div>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div>
+                <div>
+                    <table class="table table-bordered border-dark">
+
+                        <tr>
+                            <td>Marks</td>
+                            <td>"______"</td>
+                        </tr>
+
+                        <tr>
+                            <td>Total Marks:</td>
+                            <td id="total"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Average:</td>
+                            <td id="average"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Remark:</td>
+                            <td id="Remark"></td>
+                        </tr>
+                        
+                       
+
+                    </table>
+
+                    <div id="btns">
+                        <button type="button">Clear</button>
+                    </div>
+
+                   
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+
+        let btn = document.querySelector('.btns button')
+
+
+
+        btn.addEventListener('click', ()=>{
+            bookOne.value = ""
+            answer.innerText = ""
+        })
+    </script>
+
+
+</body>
+
+
+</html>

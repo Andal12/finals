@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            background: linear-gradient(to left, rgb(102, 102, 173), pink, aqua);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', cursive;
+            font-size: 30px;
+        }
+
+        p {
+
+            border-radius: 90%;
+            width: 300px;
+            height: 120px;
+            text-align: center;
+            line-height: 130px;
+            font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+        }
+
+        #gege {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #gg {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #ggg {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #gggg {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #ggggg {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #i {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #b {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #bb {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #a {
+            background-color: aqua;
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #r {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+        }
+
+        #o {
+            background-color: rgb(36, 253, 188);
+            border-radius: 10%;
+            border: 5px solid rgb(0, 0, 0);
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="abs">back</a>
+
+
+
+    <h3 id="q">JAVASCRIPT SYNTAX</h3>
+    <center>
+        <p>VARIABLES</p>
+        <p id="gege"></p>
+        <script>
+            //variables
+            let x;
+            x = 11;
+            document.getElementById("gege").innerHTML = x;
+        </script>
+
+        <p>OPERATORS</p>
+        <p id="gg"></p>
+        <script>
+            //Operators
+            document.getElementById("gg").innerHTML = (5 + 6) + 10;
+
+        </script>
+
+        <p>Expression</p>
+        <p id="ggg"></p>
+        <script>
+            //Expression
+            document.getElementById("ggg").innerHTML = "TRISTAN" + " " + "ANDAL";
+        </script>
+
+        <p>Keyword</p>
+        <p id="gggg"></p>
+        <script>
+            //Keyword
+            var n, y;
+            v = 5 + 6;
+            y = x * 20;
+            document.getElementById("gggg").innerHTML = y;
+        </script>
+    </center>
+    <h3 id="hh">JavaScript Data Types</h3>
+    <center>
+        <p>String</p>
+        <p id="ggggg"></p>
+        <script>
+            let car1 = "lambo"
+            document.getElementById("ggggg").innerHTML =
+                car1;
+        </script>
+
+        <p>Numbers</p>
+        <p id="i"></p>
+        <script>
+            var m = "17"
+            document.getElementById("i").innerHTML =
+                m;
+        </script>
+
+        <p>Booleans</p>
+        <p id="b"></p>
+        <script>
+            document.getElementById("b").innerHTML =
+                Boolean(15 < 20);
+        </script>
+
+        <p>Object</p>
+        <p id="bb"></p>
+        <script>
+            const car = {
+                carName: "Lambo",
+                brand: "Honda",
+                horsePower: 500,
+            }
+            document.getElementById("bb").innerHTML =
+                car.carName + " is " + car.brand;
+        </script>
+    </center>
+    <h3 id="hhh">JavaScript Array</h3>
+    <center>
+        <p id="a"></p>
+        <script>
+            const cars = [
+                "Gtr",
+                "Lambo",
+                "BMW"
+            ];
+            document.getElementById("a").innerHTML =
+                cars;
+
+        </script>
+    </center>
+    <h3 id="hd">JavaScript Functions</h3>
+    <center>
+        <p id="r"></p>
+
+        <script>
+            function multiplyNumbers() {
+                var result = 50 * 30;
+                return result;
+            }
+
+            var output = multiplyNumbers();
+            document.getElementById("r").innerHTML =
+                "Result: " + output;
+        </script>
+    </center>
+
+    <h3 id="ooo">Functions used as Variable Value</h3>
+    <center>
+        <p id="o"></p>
+
+        <script>
+            document.getElementById("o").innerHTML =
+                + multiply(100, 20);
+
+            function multiply(a, b) {
+                return a * b;
+            }
+        </script>
+
+        <script id="main.js"></script>
+    </center>
+</body>
+
+</html>

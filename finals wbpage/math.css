@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card{
+    font-weight: bold;
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 5px lightcoral;
+    font-family: sans-serif;
+    padding: 20px;
+
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    position: relative;
+
+}
+
+.h1{
+
+    text-align: center;
+    position: relative;
+    font-family: 'Ink free';
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+.h1::after{
+
+    content:"";
+    position: absolute;
+    display: block;
+    left: 25%;
+    bottom: 0;
+    width: 50%;
+    height: 5px;
+    background-color: lightcoral;
+
+}
+
+
+
+.placeholder{
+  font-family: 'Ink free';
+  font-weight: bold;
+ 
+
+}
+
+
+body{
+  font-family: 'Ink free';
+  font-weight: bold;
+
+    
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'JetBrains Mono', monospace;
+    
+    background-color: #EE64E2;
+    background-image: url("m.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+input{
+  font-family: 'Ink free';
+
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+    border: 2px solid black;
+    
+    border-right: 2px solid black;
+    border-bottom: 2px solid blueviolet;
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+
+
+.bin {
+    --black: #000000;
+    --binbg: #e6e6e6;
+    --width: 40px;
+    --height: 50px;
+    background-image: repeating-linear-gradient(to right, transparent, transparent 5px, var(--black) 5px, var(--black) 7px, transparent 7px);
+    background-size: 11px calc(var(--height) / 2);
+    background-position: 2px center;
+    background-repeat: repeat-x;
+    margin: auto;
+    position: relative;
+    background-color: var(--binbg);
+    border: 0;
+    color: transparent;
+    width: var(--width);
+    height: var(--height);
+    border: 2px solid var(--black);
+    border-radius: 0 0 6px 6px;
+
+  }
+  
+  
+
+
+
+  .bin::after, .bin::before {
+    content: "";
+    position: absolute;
+    transform-origin: left bottom;
+    transition: 200ms ease-in-out;
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+    right: 0;
+  }
+  
+  .bin::after {
+    left: -4px;
+    top: -5px;
+    height: 7px;
+    width: var(--width);
+    border: 2px solid var(--black);
+    background-color: var(--binbg);
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .bin::before {
+    top: -8px;
+    height: 2px;
+    width: 10px;
+    border-color: var(--black) var(--black) transparent var(--black);
+    left: 0;
+  }
+  
+  .bin:focus, .bin:active {
+    outline: none;
+    cursor: none;
+  }
+  
+  .bin:focus::before, .bin:focus::after, .bin:active::before, .bin:active::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg);
+  }
+  
+  .bin:focus::before, .bin:active::before {
+    top: -18px;
+    left: -23px;
+    right: 3px;
+  }
+  
+  .bin:focus ~ .div, .bin:active ~ .div {
+    cursor: none;
+    z-index: 1;
+  }
+  
+  .bin:focus ~ .div:hover, .bin:active ~ .div:hover {
+    cursor: none;
+  }
+  
+  .bin:focus ~ .overlay, .bin:active ~ .overlay {
+    pointer-events: inherit;
+    z-index: 2;
+    cursor: none;
+  }
+  
+  .bin:focus ~ .div > small, .bin:active ~ .div > small {
+    opacity: 1;
+    animation: throw 300ms 30ms cubic-bezier(0.215, 0.61, 0.355, 0.3) forwards;
+  }
+  
+  .div:focus, .div:active, .div:hover {
+    z-index: 1;
+    cursor: none;
+  }
+  
+  .div > small {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    left: 0;
+    right: -58px;
+    margin: auto;
+    top: 27px;
+    bottom: 0;
+    border-left: 1px solid black;
+    opacity: 0;
+  }
+  
+  .div > small::before, .div > small::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    border-right: 1px solid black;
+  }
+  
+  .div > small::before {
+    height: 17px;
+    transform: rotate(-42deg);
+    top: -3px;
+    right: 13px;
+  }
+  
+  .div > small::after {
+    height: 4px;
+    transform: rotate(-112deg);
+    top: 18px;
+    right: 11px;
+  }
+  
+  .div > small > i::before, .div > small > i::after {
+    content: "";
+    position: absolute;
+    border-top: 1px solid black;
+  }
+  
+  .div > small > i::before {
+    border-left: 1px solid black;
+    width: 4px;
+    bottom: -4px;
+    height: 4px;
+    transform: rotate(66deg);
+  }
+  
+  .div > small > i::after {
+    border-right: 1px solid black;
+    width: 5px;
+    bottom: -2px;
+    height: 5px;
+    transform: rotate(-114deg);
+    right: 6px;
+  }
+  
+  @keyframes throw {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(0, -30px) rotate(-10deg);
+    }
+  
+    60% {
+      transform: translate(0, -40px) rotate(-30deg);
+    }
+  
+    70% {
+      transform: translate(-5px, -50px) rotate(-40deg) scale(1);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: translate(-10px, -60px) rotate(-60deg) scale(0.9);
+      opacity: 1;
+    }
+  
+    90% {
+      transform: translate(-20px, -50px) rotate(-100deg) scale(0.5);
+      opacity: 0.8;
+    }
+  
+    100% {
+      transform: translate(-30px, -20px) rotate(-80deg) scale(0.4);
+      opacity: 0;
+    }
+  }
+
+
+.gg{
+        font-family: 'Ink free';
+        font-weight: bolder;
+        padding: 17px 40px;
+        border-radius: 50px;
+        border: 0;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 15px;
+        transition: all .5s ease;
+       }
+
+       .gg:hover {
+        letter-spacing: 3px;
+        background-color: hsl(261deg 80% 48%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+       }
+       
+       .gg:active {
+        letter-spacing: 3px;
+        background-color: hsl(261deg 80% 48%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+        transform: translateY(10px);
+        transition: 100ms;
+       }
+s
+
+
+
+       .checkbox-wrapper-41 {
+        --size: 100px;
+      }
+      
+      .checkbox-wrapper-41 input[type="checkbox"] {
+        width: var(--size);
+        height: calc(var(--size) / 2);
+        background-color: #fff;
+        border: 3px solid #222;
+        border-radius: 30px 100px 100px 100px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s;
+      }
+      
+      .checkbox-wrapper-41 input[type="checkbox"]::before {
+        content: "";
+        position: absolute;
+        width: calc(var(--size) / 2);
+        height: calc(var(--size) / 2);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%) scale(0.7);
+        border: 3px solid #222;
+        border-radius: 30px 100px 100px 100px;
+        background-color: #fde881;
+        box-sizing: border-box;
+        transition: all 0.5s;
+      }
+      
+      .checkbox-wrapper-41 input[type="checkbox"]:checked {
+        background-color: #fde881;
+        border-radius: 100px 100px 30px 100px;
+      }
+      
+      .checkbox-wrapper-41 input[type="checkbox"]:checked::before {
+        left: 50%;
+        background-color: #fff;
+        border-radius: 100px 100px 30px 100px;
+      }
+
+
+      .answer{
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        background: white;
+        border-radius: 2px;
+        width: 200px;
+        min-height: 25px;
+        border: black solid 2px;
+        font-family: Ink free;
+        font-weight: bold;
+      }
+
+      .abs{
+          padding: 10px 20px;
+          background: #111;
+          color: #f5f5f5;
+          border: 2px solid white;
+          font-size: 16px;
+          font-weight: 600;
+          outline: none;
+          border-radius: 10px;
+          transition: all 300ms ease-in-out;
+      }
+      
+      .abs:hover{
+          background: white;
+          color: black;
+          border: 2px solid black;
+      
+      }
